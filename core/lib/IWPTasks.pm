@@ -415,14 +415,15 @@ sub vm_command_string( $self ){
     
     my $returnString =   "$QEMUBinary ".
                         " -m $RAM ".  
-                        " -hda $VMFile -boot c ".
-                        " -net nic ".
-                        " -net user,hostfwd=tcp::$ssh_port-:22 ".
-                        " -redir tcp:".$http_port."::80 ". 
-                        " -redir tcp:".$spare1_port."::5001 ".
-                        " -redir tcp:".$spare2_port."::5002 ".
-                        " -redir tcp:".$spare3_port."::5003 ".
-                        " -redir tcp:".$spare4_port."::5004 ".                        
+                        " -hda $VMFile -boot order=c ".
+                        " -nic user".
+                        ",id=iwpnetwork".
+                        ",hostfwd=tcp::$ssh_port-:22".
+                        ",hostfwd=tcp::".$http_port."-:80". 
+                        ",hostfwd=tcp::".$spare1_port."-:5001".
+                        ",hostfwd=tcp::".$spare2_port."-:5002".
+                        ",hostfwd=tcp::".$spare3_port."-:5003".
+                        ",hostfwd=tcp::".$spare4_port."-:5004".
                         " -monitor telnet:127.0.0.1:$monitor_port,server,nowait ".
                         " -name IWPServer-$ssh_port";
             
