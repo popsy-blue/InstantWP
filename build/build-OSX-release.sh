@@ -7,21 +7,36 @@ cd "${0%/*}"
 
 
 # get the version numbers
-read IWP_VERSION < /Users/seamus/GitHub/InstantWP/build/IWP_VERSION.txt
-read VM_VERSION < /Users/seamus/GitHub/InstantWP/build/VM_VERSION.txt
+read IWP_VERSION < ./IWP_VERSION.txt
+read VM_VERSION < ./VM_VERSION.txt
 
 # set constants
-mkdir /Users/seamus/GitHub/InstantWP/build/release
-REL_ROOT=/Users/seamus/GitHub/InstantWP/build/release
-SOURCE_DIR=/Users/seamus/GitHub/InstantWP
+mkdir ../release
+REL_ROOT=../release
+SOURCE_DIR=../../InstantWP-Next-Generation
 VM_FILE="$VM_VERSION".qcow2
 
 # set release root
 REL_DIR=$REL_ROOT/IWP-"$IWP_VERSION"-macOS
 
+echo Installing perl dependencies
+cpanm Config::INI
+cpanm Proc::ProcessTable
+cpanm Proc::Terminator
+cpanm Term::Spinner
+
+#for iwpcli
+cpanm Proc::Background
+
+#for ssh perl script
+cpanm IO::Stty
+cpanm Expect
+
+#for Telnet perl script
+cpanm Net::Telnet
+
 echo Making release directory $REL_DIR
 mkdir $REL_DIR/
-
 
 echo Making build directories...
 mkdir $REL_DIR/bin
@@ -32,17 +47,27 @@ mkdir $REL_DIR/platform
 mkdir $REL_DIR/vm
 mkdir $REL_DIR/controlpanel
 
+echo Building perl applications...
+
+echo Building iwp
+pp --compile --output=$REL_DIR/bin/iwp --lib=$SOURCE_DIR/core/lib  $SOURCE_DIR/core/bin/iwp.pm
+echo Building ssh-term
+pp --compile --output=$REL_DIR/bin/ssh-term --lib=$SOURCE_DIR/core/lib  $SOURCE_DIR/core/bin/ssh-term.pm
+echo Building iwpcli
+pp --compile --output=$REL_DIR/iwpcli --lib=$SOURCE_DIR/core/lib  $SOURCE_DIR/core/iwpcli.pm
+echo Building IWPQEMUTelnet
+pp --compile --output=$REL_DIR/platform/osx/IWPQEMUTelnet  $SOURCE_DIR/components/IWPQEMUTelnetMac/IWPQEMUTelnet.pm
 
 echo Copying files...
 
 # startup files
-cp $SOURCE_DIR/core/iwpcli $REL_DIR/
+#cp $SOURCE_DIR/core/iwpcli $REL_DIR/
 cp $SOURCE_DIR/core/Start-InstantWP $REL_DIR/
 cp $SOURCE_DIR/core/ReadMe/ReadMe-First-macOS.html $REL_DIR/
 
 # bin directory
-cp $SOURCE_DIR/core/bin/iwp $REL_DIR/bin/
-cp $SOURCE_DIR/core/bin/ssh-term $REL_DIR/bin/
+#cp $SOURCE_DIR/core/bin/iwp $REL_DIR/bin/
+#cp $SOURCE_DIR/core/bin/ssh-term $REL_DIR/bin/
 cp $SOURCE_DIR/core/bin/run-iwpcli $REL_DIR/bin/
 cp $SOURCE_DIR/core/bin/startIWP $REL_DIR/bin/
 
