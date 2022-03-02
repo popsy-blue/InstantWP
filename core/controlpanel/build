@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo ----------------------------------
+echo OSX IWP Control Panel Build Script
+echo ----------------------------------
+cd "${0%/*}"
+
+echo Removing old version of app...
+rm -rf ./InstantWP.app/
+
+echo Building new app...
+/Applications/Racket\ v6.9/bin/raco exe   --icns ./resource/IWP.icns --gui InstantWP.rkt
+
+echo Creating distribution...
+/Applications/Racket\ v6.9/bin/raco distribute distribute InstantWP.app
+
+echo Cleaning up...
+rm -rf ./InstantWP.app/
+
+echo Done creating InstantWP.app!
