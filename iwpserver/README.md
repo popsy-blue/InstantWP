@@ -6,51 +6,60 @@ Create a new image using qemu-img, 20G in size:
 qemu-img create -f qcow2 iwpserver.img 20G
 ```
 
-Download the Alpine Version 3.5.0 Virtual iso image:
+Download the Alpine Version 3.15.0 Virtual iso image:
 
 ```text
-https://fr.alpinelinux.org/alpine/v3.5/releases/x86/alpine-virt-3.5.0-x86.iso
+https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-virt-3.15.0-x86.iso
 ```
 
-Then boot the image using qemu-system-i386 and install Alpine:
+Then boot the image using qemu-system-i386:
 
 ```text
-./qemu-system-i386 \
+./qemu-system-x86_64 \
 -m 1024 \
--hda ./iwpserver.img -boot c \
--cdrom ./alpine-virt-3.5.0-x86.iso
--net nic \
--net user,hostfwd=tcp::10022-:22 \
--redir tcp:10080::80 \
--redir tcp:10020::20 \
--redir tcp:10021::21 \
+-hda ./iwpserver.img -boot order=cd \
+-cdrom ./alpine-virt-3.15.0-x86.iso
+-nic user \
+, id=iwpnetwork, \
+, hostfwd=tcp::25022-:22 \
+, hostfwd=tcp::25080-:80 \
+, hostfwd=tcp::25021-:21 \
 -monitor telnet:127.0.0.1:1234,server,nowait 
+```
+
+Install Alpine Linux:
+
+```text
+setup-alpine
 ```
 
 Change the root password to 'root'.
 
 Add a user 'iwp' with password 'iwp'.
 
-Install sudo and nano.
+To get PHP8, uncomment the community repository in the /etc/apk/repositories file using nano.
 
-Add the iwp user to sudoers.
-
-To get PHP7, edit the /etc/apk/repositories file using an nano and add a line like:
-
-http://dl-6.alpinelinux.org/alpine/edge/community
-
-Obtain the latest index of available packages:
+Obtain the latest index of available packages and perform update:
 
 ```text
 apk update
+apk upgrade
 ```
 
-Ssh into the virtual server and install the packages as listed in the installed-packages.md file using the pkg command.
+Install apache2, mariadb, mariadb-client, php8 and phpmyadmin with
 
-Copy over the files from 2.0.0 via SFTP and reboot.
+```text
+apk add <package name>
+```
 
-Also install PHP Composer and WP-CLI.
+Verify if all required php8 packages for wordpress are installed by consulting 
+https://make.wordpress.org/hosting/handbook/server-environment/#php-extensions
 
+Copy over the files from 3.0.0 via SFTP.
+
+Change owner of all files and directories in the /var/www/localhost/htdocs folder to apache/apache.
+
+Reboot.
 
 
 
