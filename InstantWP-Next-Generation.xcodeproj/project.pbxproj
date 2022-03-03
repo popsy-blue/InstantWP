@@ -1,0 +1,73 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C7F6DBE127D0197D001939CF /* InstantWP-Next-Generation */ = {isa = PBXFileReference; lastKnownFileType = text; name = "InstantWP-Next-Generation"; path = "../../../../../Users/donat/Desktop/InstantWP-Next-Generation"; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C7B66D0A27D014C800031E1C = {
+			isa = PBXGroup;
+			children = (
+				C7F6DBE127D0197D001939CF /* InstantWP-Next-Generation */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C7B66D0B27D014C800031E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = C7B66D0E27D014C800031E1C /* Build configuration list for PBXProject "InstantWP-Next-Generation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7B66D0A27D014C800031E1C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C7B66D0F27D014C800031E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C7B66D1027D014C800031E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7B66D0E27D014C800031E1C /* Build configuration list for PBXProject "InstantWP-Next-Generation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B66D0F27D014C800031E1C /* Debug */,
+				C7B66D1027D014C800031E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7B66D0B27D014C800031E1C /* Project object */;
+}
