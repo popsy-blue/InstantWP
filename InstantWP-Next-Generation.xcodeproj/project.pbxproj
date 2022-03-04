@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		C789F8E027D277F000CC814D /* InstantWP-Next-Generation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "InstantWP-Next-Generation"; sourceTree = "<group>"; };
+		C7B4EBB927D2A7F800856734 /* InstantWP-Next-Generation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "InstantWP-Next-Generation"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		C7B66D0A27D014C800031E1C = {
 			isa = PBXGroup;
 			children = (
-				C789F8E027D277F000CC814D /* InstantWP-Next-Generation */,
+				C7B4EBB927D2A7F800856734 /* InstantWP-Next-Generation */,
 			);
 			sourceTree = "<group>";
 		};
