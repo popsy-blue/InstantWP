@@ -63,13 +63,28 @@ apk add <package name>
 
 Copy over the files from folder 'iwpserver 3.0.0' via SFTP.
 
+Add apache2 and mariadb as a startup service.
+```text
+rc-update add apache2
+rc-update add mariadb
+```
+
 Download wordpress into the folder /usr/share/webapps/wordpress.
+
 Download filemanager into the folder /user/share/webapps/filemenager.
+
 Create Symlink for folders wordpress and filemanager in /var/www/localhost/htdocs.
 
 Change owner of all files and directories in the /var/www/localhost/htdocs folder to apache/apache.
 
 Reboot.
 
-You are almost done!
+Create wordpress database in mariadb.
+
+Install wordpress by following the instructions on https://wordpress.org/support/article/how-to-install-wordpress/
+```text
+http://127.0.0.1:25079/wordpress
+```
+
+You are done!
 
