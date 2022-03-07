@@ -12,7 +12,7 @@ Download the Alpine Version 3.15.0 Virtual iso image:
 https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-virt-3.15.0-x86.iso
 ```
 
-Then boot the image using qemu-system-i386:
+Then boot the image using qemu-system-x86_64:
 
 ```text
 ./qemu-system-x86_64 \
@@ -36,6 +36,7 @@ setup-alpine
 Change the root password to 'root'.
 
 Add a user 'iwp' with password 'iwp'.
+Add user 'iwp' to group 'wheel'.
 
 To get PHP8, uncomment the community repository in the /etc/apk/repositories file using nano.
 
@@ -55,11 +56,20 @@ apk add <package name>
 Verify if all required php8 packages for wordpress are installed by consulting 
 https://make.wordpress.org/hosting/handbook/server-environment/#php-extensions
 
-Copy over the files from 3.0.0 via SFTP.
+and install if any are missing with 
+```text
+apk add <package name>
+```
+
+Copy over the files from folder 'iwpserver 3.0.0' via SFTP.
+
+Download wordpress into the folder /usr/share/webapps/wordpress.
+Download filemanager into the folder /user/share/webapps/filemenager.
+Create Symlink for folders wordpress and filemanager in /var/www/localhost/htdocs.
 
 Change owner of all files and directories in the /var/www/localhost/htdocs folder to apache/apache.
 
 Reboot.
 
-
+You are almost done!
 
