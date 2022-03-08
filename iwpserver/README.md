@@ -56,7 +56,7 @@ apk add <package name>
 Verify if all required php8 packages for wordpress are installed by consulting 
 https://make.wordpress.org/hosting/handbook/server-environment/#php-extensions
 
-and install if any are missing with 
+and install any missing packages with 
 ```text
 apk add <package name>
 ```
@@ -71,7 +71,7 @@ rc-update add mariadb
 
 Download wordpress into the folder /usr/share/webapps/wordpress.
 
-Download filemanager into the folder /user/share/webapps/filemenager.
+Download filemanager into the folder /user/share/webapps/filemanager.
 
 Create Symlink for folders wordpress and filemanager in /var/www/localhost/htdocs.
 
