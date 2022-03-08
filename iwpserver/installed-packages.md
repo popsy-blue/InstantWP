@@ -1,164 +1,170 @@
 # IWPServer list of installed packages
 
-This is the output of the Alpine Linux command 'apk -vv info|sort' which lists installed packages.
+This is the output of the Alpine Linux command 'apk -vv info | sort' which lists installed packages of release 3.15:
 
 ```text
-acct-6.6.2-r0 - The GNU Accounting Utilities
-alpine-base-3.5.0-r0 - Meta package for minimal alpine base
-alpine-baselayout-3.0.4-r0 - Alpine base dir structure and init scripts
-alpine-conf-3.5.0-r2 - Alpine configuration management scripts
-alpine-keys-1.3-r0 - Public keys for Alpine Linux packages
-apache2-2.4.23-r10 - A high performance Unix-based HTTP server
-apk-tools-2.6.8-r1 - Alpine Package Keeper - package manager for alpine
-apr-1.5.2-r1 - The Apache Portable Runtime
-apr-util-1.5.4-r2 - The Apache Portable Runtime Utility Library
-aspell-libs-0.60.6.1-r11 - A spell checker designed to eventually replace Ispell (libraries)
-blkid-2.28.2-r1 - block device identification tool
-busybox-1.25.1-r0 - Size optimized toolbox of many common UNIX utilities
-busybox-initscripts-3.0-r8 - Init scripts for busybox daemons
-busybox-suid-1.25.1-r0 - suid binaries of Busybox
-c-client-2007f-r4 - UW IMAP c-client library
-ca-certificates-20161130-r0 - Common CA certificates PEM files
-cryptsetup-libs-1.7.2-r1 - Cryptsetup shared library
-db-5.3.28-r0 - The Berkeley DB embedded database system
-device-mapper-libs-2.02.168-r3 - Device-mapper shared library
-e2fsprogs-1.43.3-r0 - Standard Ext2/3/4 filesystem utilities
-e2fsprogs-libs-1.43.3-r0 - Standard Ext2/3/4 filesystem utilities (libraries)
-enchant-1.6.0-r11 - A wrapper library for generic spell checking
-expat-2.2.0-r0 - An XML Parser library written in C
-freetds-1.00-r0 - Tabular Datastream Library
-freetype-2.7-r0 - TrueType font rendering library
-gdbm-1.12-r0 - GNU dbm is a set of database routines that use extensible hashing
-glib-2.50.2-r0 - Common C routines used by Gtk+ and other libs
-gmp-6.1.1-r0 - A free library for arbitrary precision arithmetic
-hunspell-1.4.1-r0 - Spell checker and morphological analyzer library and program
-kmod-23-r1 - Linux kernel module management utilities
-lddtree-1.25-r2 - List dynamic dependencies as a tree
-libaio-0.3.110-r0 - Asynchronous input/output library
-libblkid-2.28.2-r1 - Block device identification library from util-linux
-libbz2-1.0.6-r5 - Shared library for bz2
-libc-utils-0.7-r1 - Meta package to pull in correct libc
-libcom_err-1.43.3-r0 - Common error description library
-libcrypto1.0-1.0.2j-r2 - Crypto library from openssl
-libcurl-7.52.1-r0 - The multiprotocol file transfer library
-libedit-20150325.3.1-r3 - netbsd line editing library
-libffi-3.2.1-r2 - A portable, high level programming interface to various calling conventions.
-libgcc-6.2.1-r1 - GNU C compiler runtime libraries
-libgcrypt-1.7.3-r0 - general purpose crypto library based on the code used in GnuPG
-libgpg-error-1.24-r0 - Support library for libgcrypt
-libice-1.0.9-r0 - X11 Inter-Client Exchange library
-libintl-0.19.8.1-r0 - GNU gettext runtime library
-libjpeg-turbo-1.5.1-r0 - accelerated baseline JPEG compression and decompression library
-libldap-2.4.44-r3 - OpenLDAP libraries
-libmcrypt-2.5.8-r7 - A library which provides a uniform interface to several symmetric encryption algorithms
-libmount-2.28.2-r1 - Block device identification library from util-linux
-libpng-1.6.25-r0 - Portable Network Graphics library
-libpq-9.6.1-r0 - PostgreSQL libraries
-libressl2.4-libcrypto-2.4.4-r0 - libressl libcrypto library
-libressl2.4-libssl-2.4.4-r0 - libressl libssl library
-libsasl-2.1.26-r8 - Cyrus Simple Authentication and Security Layer (SASL) library
-libsm-1.2.2-r0 - X11 Session Management library
-libssh2-1.7.0-r2 - library for accessing ssh1/ssh2 protocol servers
-libssl1.0-1.0.2j-r2 - SSL shared libraries
-libstdc++-6.2.1-r1 - GNU C++ standard runtime library
-libuuid-2.28.2-r1 - DCE compatible Universally Unique Identifier library
-libwebp-0.5.2-r0 - Libraries for working with WebP images
-libx11-1.6.4-r0 - X11 client-side library
-libxau-1.0.8-r1 - X11 authorisation library
-libxcb-1.12-r0 - X11 client-side library
-libxdmcp-1.1.2-r1 - X11 Display Manager Control Protocol library
-libxext-1.3.3-r1 - X11 miscellaneous extensions library
-libxml2-2.9.4-r0 - XML parsing library, version 2
-libxpm-3.5.11-r1 - X11 pixmap library
-libxslt-1.1.29-r0 - XML stylesheet transformation library
-libxt-1.1.5-r0 - X11 toolkit intrinsics library
-libzip-1.1.3-r0 - A C library for reading, creating, and modifying zip archives
-linux-virtgrsec-4.4.39-r2 - Linux kernel with grsecurity
-mariadb-10.1.20-r0 - A fast SQL database server
-mariadb-client-10.1.20-r0 - client for the MariaDB database
-mariadb-client-libs-10.1.20-r0 - MariaDB client library
-mariadb-common-10.1.20-r0 - MariaDB common files for both server and client
-mkinitfs-3.0.7-r1 - Tool to generate initramfs images for Alpine
-mtools-4.0.18-r1 - A collection of utilities to access MS-DOS disks from Unix without mounting them
-musl-1.1.15-r5 - the musl c library (libc) implementation
-musl-utils-1.1.15-r5 - the musl c library (libc) implementation
-nano-2.7.2-r0 - Text Editor. GNU nano is designed to be a free replacement for the Pico text editor.
-ncurses-libs-6.0-r7 - Ncurses libraries
-ncurses-terminfo-6.0-r7 - Console display library
-ncurses-terminfo-base-6.0-r7 - Descriptions of common terminals
-net-snmp-libs-5.7.3-r7 - The NET-SNMP runtime client libraries
-openrc-0.21.7-r3 - OpenRC manages the services, startup and shutdown of a host
-openssh-7.4_p1-r0 - Port of OpenBSD's free SSH release
-openssh-client-7.4_p1-r0 - OpenBSD's SSH client
-openssh-sftp-server-7.4_p1-r0 - ssh sftp server module
-openssl-1.0.2j-r2 - Toolkit for SSL v2/v3 and TLS v1
-pcre-8.39-r0 - Perl-compatible regular expression library
-php7-7.0.14-r5 - The PHP language runtime engine - 7th branch
-php7-apache2-7.0.14-r5 - PHP Module for Apache2
-php7-apcu-5.1.7-r0 - PHP extension APC User Cache
-php7-bcmath-7.0.14-r5 - PHP7 extension: bcmath
-php7-bz2-7.0.14-r5 - PHP7 extension: bz2
-php7-calendar-7.0.14-r5 - PHP7 extension: calendar
-php7-cgi-7.0.14-r5 - PHP Common Gateway Interface
-php7-common-7.0.14-r5 - The PHP language runtime engine - 7th branch (common config)
-php7-ctype-7.0.14-r5 - PHP7 extension: ctype
-php7-curl-7.0.14-r5 - PHP7 extension: curl
-php7-dba-7.0.14-r5 - PHP7 extension: dba
-php7-dev-7.0.14-r5 - The PHP language runtime engine - 7th branch (development files)
-php7-doc-7.0.14-r5 - The PHP language runtime engine - 7th branch (documentation)
-php7-dom-7.0.14-r5 - PHP7 extension: dom
-php7-embed-7.0.14-r5 - PHP Embedded Library
-php7-enchant-7.0.14-r5 - PHP7 extension: enchant
-php7-exif-7.0.14-r5 - PHP7 extension: exif
-php7-ftp-7.0.14-r5 - PHP7 extension: ftp
-php7-gd-7.0.14-r5 - PHP7 extension: gd
-php7-gettext-7.0.14-r5 - PHP7 extension: gettext
-php7-gmp-7.0.14-r5 - PHP7 extension: gmp
-php7-iconv-7.0.14-r5 - PHP7 extension: iconv
-php7-imap-7.0.14-r5 - PHP7 extension: imap
-php7-json-7.0.14-r5 - PHP7 extension: json
-php7-ldap-7.0.14-r5 - PHP7 extension: ldap
-php7-mbstring-7.0.14-r5 - PHP7 extension: mbstring
-php7-mcrypt-7.0.14-r5 - PHP7 extension: mcrypt
-php7-mysqli-7.0.14-r5 - PHP7 extension: mysqli
-php7-odbc-7.0.14-r5 - PHP7 extension: odbc
-php7-opcache-7.0.14-r5 - PHP7 extension: opcache
-php7-openssl-7.0.14-r5 - PHP7 extension: openssl
-php7-pdo-7.0.14-r5 - PHP7 extension: pdo
-php7-pdo_dblib-7.0.14-r5 - PHP7 extension: pdo_dblib
-php7-pdo_mysql-7.0.14-r5 - PHP7 extension: pdo_mysql
-php7-pdo_odbc-7.0.14-r5 - PHP7 extension: pdo_odbc
-php7-pdo_pgsql-7.0.14-r5 - PHP7 extension: pdo_pgsql
-php7-pdo_sqlite-7.0.14-r5 - PHP7 extension: pdo_sqlite
-php7-pear-7.0.14-r5 - PHP Extension and Application Repository
-php7-pgsql-7.0.14-r5 - PHP7 extension: pgsql
-php7-phar-7.0.14-r5 - PHP7 extension: phar
-php7-phpdbg-7.0.14-r5 - Interactive PHP debugger
-php7-posix-7.0.14-r5 - PHP7 extension: posix
-php7-pspell-7.0.14-r5 - PHP7 extension: pspell
-php7-session-7.0.14-r5 - PHP7 extension: session
-php7-shmop-7.0.14-r5 - PHP7 extension: shmop
-php7-snmp-7.0.14-r5 - PHP7 extension: snmp
-php7-soap-7.0.14-r5 - PHP7 extension: soap
-php7-sockets-7.0.14-r5 - PHP7 extension: sockets
-php7-sqlite3-7.0.14-r5 - PHP7 extension: sqlite3
-php7-sysvmsg-7.0.14-r5 - PHP7 extension: sysvmsg
-php7-sysvsem-7.0.14-r5 - PHP7 extension: sysvsem
-php7-sysvshm-7.0.14-r5 - PHP7 extension: sysvshm
-php7-wddx-7.0.14-r5 - PHP7 extension: wddx
-php7-xml-7.0.14-r5 - PHP7 extension: xml
-php7-xmlreader-7.0.14-r5 - PHP7 extension: xmlreader
-php7-xmlrpc-7.0.14-r5 - PHP7 extension: xmlrpc
-php7-xsl-7.0.14-r5 - PHP7 extension: xsl
-php7-zip-7.0.14-r5 - PHP7 extension: zip
-php7-zlib-7.0.14-r5 - PHP7 extension: zlib
-readline-6.3.008-r4 - GNU readline library
-scanelf-1.1.6-r0 - Scan ELF binaries for stuff
-sqlite-libs-3.15.2-r0 - Sqlite3 library
-sudo-1.8.19_p1-r0 - Give certain users the ability to run some commands as root
-syslinux-6.04_pre1-r0 - Boot loader for the Linux operating system
-unixodbc-2.3.4-r0 - ODBC is an open specification to access Data Sources
-xz-libs-5.2.2-r1 - Library and command line tools for XZ and LZMA compressed files (libraries)
-zlib-1.2.8-r2 - A compression/decompression Library
+acct-6.6.4-r0 - The GNU Accounting Utilities
+alpine-base-3.15.0-r0 - Meta package for minimal alpine base
+alpine-baselayout-3.2.0-r18 - Alpine base dir structure and init scripts
+alpine-conf-3.13.0-r1 - Alpine configuration management scripts
+alpine-keys-2.4-r1 - Public keys for Alpine Linux packages
+aom-libs-3.2.0-r0 - Alliance for Open Media (AOM) AV1 codec SDK (libraries)
+apache2-2.4.52-r0 - A high performance Unix-based HTTP server
+apk-tools-2.12.7-r3 - Alpine Package Keeper - package manager for alpine
+apr-1.7.0-r0 - The Apache Portable Runtime
+apr-util-1.6.1-r11 - The Apache Portable Runtime Utility Library
+argon2-libs-20190702-r1 - The password hash Argon2, winner of PHC (libraries)
+avahi-libs-0.8-r5 - Libraries for avahi run-time use
+blkid-2.37.4-r0 - Block device identification tool from util-linux
+brotli-libs-1.0.9-r5 - Generic lossless compressor (libraries)
+busybox-1.34.1-r4 - Size optimized toolbox of many common UNIX utilities
+busybox-initscripts-4.0-r5 - Init scripts for busybox daemons
+busybox-suid-1.34.1-r4 - suid binaries of Busybox
+ca-certificates-20211220-r0 - Common CA certificates PEM files from Mozilla
+ca-certificates-bundle-20211220-r0 - Pre generated bundle of Mozilla certificates
+cairo-1.16.0-r3 - A vector graphics library
+cairo-gobject-1.16.0-r3 - A vector graphics library (gobject bindings)
+cryptsetup-libs-2.4.3-r0 - Cryptsetup shared library
+cups-libs-2.3.3-r5 - CUPS libraries
+dbus-libs-1.12.20-r4 - D-BUS access libraries
+device-mapper-libs-2.02.187-r2 - Device-mapper shared library
+doas-6.8.1-r7 - OpenBSD's temporary privilege escalation tool
+e2fsprogs-1.46.4-r0 - Standard Ext2/3/4 filesystem utilities
+e2fsprogs-libs-1.46.4-r0 - Standard Ext2/3/4 filesystem utilities (libraries)
+expat-2.4.7-r0 - XML Parser library written in C
+fontconfig-2.13.1-r4 - Library for configuring and customizing font access
+freetype-2.11.0-r0 - TrueType font rendering library
+fribidi-1.0.11-r0 - Free Implementation of the Unicode Bidirectional Algorithm
+gdk-pixbuf-2.42.6-r0 - GTK+ image loading library
+ghostscript-9.55.0-r0 - An interpreter for the PostScript language and for PDF
+glib-2.70.1-r0 - Common C routines used by Gtk+ and other libs
+gmp-6.2.1-r1 - free library for arbitrary precision arithmetic
+gnutls-3.7.1-r0 - TLS protocol implementation
+graphite2-1.3.14-r0 - reimplementation of the SIL Graphite text processing engine
+harfbuzz-3.0.0-r2 - Text shaping library
+icu-libs-69.1-r1 - International Components for Unicode library (libraries)
+ifupdown-ng-0.11.3-r0 - tools for managing network configuration
+imagemagick-7.1.0.16-r0 - Collection of tools and libraries for many image formats
+imagemagick-libs-7.1.0.16-r0 - Collection of tools and libraries for many image formats (libraries)
+jbig2dec-0.19-r0 - JBIG2 image compression format decoder
+json-c-0.15-r1 - A JSON implementation in C
+kmod-29-r2 - Linux kernel module management utilities
+kmod-libs-29-r2 - Linux kernel module management utilities (libraries)
+kmod-openrc-29-r2 - Linux kernel module management utilities (OpenRC init scripts)
+lcms2-2.12-r1 - Color Management Engine
+lddtree-1.26-r2 - List dynamic dependencies as a tree
+libaio-0.3.112-r1 - Asynchronous input/output library
+libblkid-2.37.4-r0 - Block device identification library from util-linux
+libbsd-0.11.3-r1 - commonly-used BSD functions not implemented by all libcs
+libbz2-1.0.8-r1 - Shared library for bz2
+libc-utils-0.7.2-r3 - Meta package to pull in correct libc
+libcom_err-1.46.4-r0 - Common error description library
+libcrypto1.1-1.1.1l-r8 - Crypto library from openssl
+libcurl-7.80.0-r0 - The multiprotocol file transfer library
+libde265-1.0.8-r1 - Open h.265 video codec implementation
+libedit-20210910.3.1-r0 - BSD line editing library
+libffi-3.4.2-r1 - portable, high level programming interface to various calling conventions.
+libgcc-10.3.1_git20211027-r0 - GNU C compiler runtime libraries
+libgomp-10.3.1_git20211027-r0 - GCC shared-memory parallel programming API library
+libheif-1.12.0-r2 - ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+libice-1.0.10-r0 - X11 Inter-Client Exchange library
+libintl-0.21-r0 - GNU gettext runtime library
+libjpeg-turbo-2.1.2-r0 - Accelerated baseline JPEG compression and decompression library
+libltdl-2.4.6-r7 - Runtime libraries for GNU Libtool Dynamic Module Loader
+libmcrypt-2.5.8-r9 - A library which provides a uniform interface to several symmetric encryption algorithms
+libmd-1.0.3-r0 - Message Digest functions from BSD systems
+libmount-2.37.4-r0 - Block device identification library from util-linux
+libpng-1.6.37-r1 - Portable Network Graphics library
+libretls-3.3.4-r2 - port of libtls from libressl to openssl
+librsvg-2.50.7-r1 - SAX-based renderer for SVG files into a GdkPixbuf
+libsm-1.2.3-r0 - X11 Session Management library
+libsodium-1.0.18-r0 - P(ortable|ackageable) NaCl-based crypto library
+libssh2-1.10.0-r2 - library for accessing ssh1/ssh2 protocol servers
+libssl1.1-1.1.1l-r8 - SSL shared libraries
+libstdc++-10.3.1_git20211027-r0 - GNU C++ standard runtime library
+libtasn1-4.18.0-r0 - The ASN.1 library used in GNUTLS
+libunistring-0.9.10-r1 - Library for manipulating Unicode strings and C strings
+libuuid-2.37.4-r0 - DCE compatible Universally Unique Identifier library
+libwebp-1.2.2-r0 - Libraries for working with WebP images
+libx11-1.7.2-r0 - X11 client-side library
+libxau-1.0.9-r0 - X11 authorisation library
+libxcb-1.14-r2 - X11 client-side library
+libxdmcp-1.1.3-r0 - X11 Display Manager Control Protocol library
+libxext-1.3.4-r0 - X11 miscellaneous extensions library
+libxft-2.3.4-r0 - FreeType-based font drawing library for X
+libxml2-2.9.12-r2 - XML parsing library, version 2
+libxpm-3.5.13-r0 - X11 pixmap library
+libxrender-0.9.10-r3 - X Rendering Extension client library
+libxt-1.2.1-r0 - X11 toolkit intrinsics library
+libzip-1.8.0-r1 - C library for manipulating zip archives
+linux-pam-1.5.2-r0 - Linux PAM (Pluggable Authentication Modules for Linux)
+linux-virt-5.15.26-r0 - Linux lts kernel
+mariadb-10.6.4-r2 - A fast SQL database server
+mariadb-client-10.6.4-r2 - Client for the MariaDB database
+mariadb-common-10.6.4-r2 - MariaDB common files for both server and client
+mariadb-openrc-10.6.4-r2 - A fast SQL database server (OpenRC init scripts)
+mkinitfs-3.6.0-r0 - Tool to generate initramfs images for Alpine
+mtools-4.0.36-r0 - collection of utilities to access MS-DOS disks from Unix without mounting them
+musl-1.2.2-r7 - the musl c library (libc) implementation
+musl-utils-1.2.2-r7 - the musl c library (libc) implementation
+nano-5.9-r0 - Enhanced clone of the Pico text editor
+ncurses-libs-6.3_p20211120-r0 - Ncurses libraries
+ncurses-terminfo-base-6.3_p20211120-r0 - Descriptions of common terminals
+nettle-3.7.3-r0 - A low-level cryptographic library
+nghttp2-libs-1.46.0-r0 - Experimental HTTP/2 client, server and proxy (libraries)
+oniguruma-6.9.7.1-r0 - a regular expressions library
+openrc-0.44.7-r3 - OpenRC manages the services, startup and shutdown of a host
+openssh-8.8_p1-r1 - Port of OpenBSD's free SSH release
+openssh-client-common-8.8_p1-r1 - OpenBSD's SSH client common files
+openssh-client-default-8.8_p1-r1 - OpenBSD's SSH client
+openssh-keygen-8.8_p1-r1 - ssh helper program for generating keys
+openssh-server-8.8_p1-r1 - OpenSSH server
+openssh-server-common-8.8_p1-r1 - OpenSSH server configuration files
+openssh-sftp-server-8.8_p1-r1 - ssh sftp server module
+openssl-1.1.1l-r8 - toolkit for transport layer security (TLS) - version 1.1
+p11-kit-0.24.0-r1 - Library for loading and sharing PKCS#11 modules
+pango-1.48.10-r0 - library for layout and rendering of text
+pcre-8.45-r1 - Perl-compatible regular expression library
+pcre2-10.39-r0 - Perl-compatible regular expression library
+php8-8.0.16-r0 - The PHP8 language runtime engine
+php8-apache2-8.0.16-r0 - PHP8 Module for Apache2
+php8-bcmath-8.0.16-r0 - PHP8 extension: BC Math
+php8-bz2-8.0.16-r0 - PHP8 extension: Bzip2
+php8-common-8.0.16-r0 - The PHP8 language runtime engine (common config)
+php8-ctype-8.0.16-r0 - PHP8 extension: ctype
+php8-curl-8.0.16-r0 - PHP8 extension: cURL
+php8-dom-8.0.16-r0 - PHP8 extension: DOM
+php8-exif-8.0.16-r0 - PHP8 extension: EXIF
+php8-fileinfo-8.0.16-r0 - PHP8 extension: fileinfo
+php8-ftp-8.0.16-r0 - PHP8 extension: FTP
+php8-gd-8.0.16-r0 - PHP8 extension: GD imaging
+php8-iconv-8.0.16-r0 - PHP8 extension: Iconv
+php8-intl-8.0.16-r0 - PHP8 extension: Internationalization
+php8-mbstring-8.0.16-r0 - PHP8 extension: Multibyte String Functions
+php8-mysqli-8.0.16-r0 - PHP8 extension: MySQLi
+php8-mysqlnd-8.0.16-r0 - PHP8 extension: MySQLnd
+php8-openssl-8.0.16-r0 - PHP8 extension: OpenSSL
+php8-pecl-imagick-3.6.0-r0 - PHP 8 extension provides a wrapper to the ImageMagick library - PECL
+php8-pecl-mcrypt-1.0.4-r0 - Provides PHP 8 bindings for the unmaintained libmcrypt - PECL
+php8-pecl-ssh2-1.3.1-r0 - PHP 8 extension provide bindings for the libssh2 library - PECL
+php8-session-8.0.16-r0 - PHP8 extension: Sessions
+php8-simplexml-8.0.16-r0 - PHP8 extension: SimpleXML
+php8-sockets-8.0.16-r0 - PHP8 extension: Sockets
+php8-sodium-8.0.16-r0 - PHP8 extension: Sodium
+php8-xml-8.0.16-r0 - PHP8 extension: XML
+php8-xmlreader-8.0.16-r0 - PHP8 extension: XMLReader
+php8-zip-8.0.16-r0 - PHP8 extension: Zip
+phpmyadmin-5.1.3-r0 - A Web-based PHP tool for administering MySQL
+pixman-0.40.0-r3 - Low-level pixel manipulation library
+pkgconf-1.8.0-r0 - development framework configuration tools
+scanelf-1.3.3-r0 - Scan ELF binaries for stuff
+shared-mime-info-2.1-r0 - Freedesktop.org Shared MIME Info
+ssl_client-1.34.1-r4 - EXternal ssl_client for busybox wget
+syslinux-6.04_pre1-r9 - Boot loader for the Linux operating system
+tiff-4.3.0-r0 - Provides support for the Tag Image File Format or TIFF
+x265-libs-3.5-r0 - Open Source H265/HEVC video encoder (libraries)
+xz-libs-5.2.5-r0 - Library and CLI tools for XZ and LZMA compressed files (libraries)
+zlib-1.2.11-r3 - A compression/decompression Library
+zstd-libs-1.5.0-r0 - Zstandard - Fast real-time compression algorithm (libraries)
 
 ```
