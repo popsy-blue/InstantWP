@@ -150,7 +150,7 @@ $opts = array(
 		// Items volume
 		array(
 			'driver'        => 'LocalFileSystem',           // driver for accessing file system (REQUIRED)
-			'path'          => '../../../htdocs',                 // path to files (REQUIRED)
+			'path'          => '/usr/share/webapps',                 // path to files (REQUIRED)
 			'URL'           => dirname($_SERVER['PHP_SELF']) . '/../../../htdocs', // URL to files (REQUIRED)
 			'trashHash'     => 't1_Lw',                     // elFinder's hash of trash folder
 			'winHashFix'    => DIRECTORY_SEPARATOR !== '/', // to make hash same to Linux one on windows too
